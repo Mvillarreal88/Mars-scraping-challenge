@@ -4,12 +4,12 @@ import pandas as pd
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-def news():
+def scrape_info():
     # Set up Splinter
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
 
-    # Visit nytimes
+    # Visit Mars site
     url = "https://redplanetscience.com/"
     browser.visit(url)
 
@@ -38,10 +38,5 @@ def news():
     mars_news_dict ={}
     mars_news_dict['news_title'] = news_title
     mars_news_dict['news_paragraph'] = news_paragraph
-
     # Return results
-    return mars_news_dict
-
-    
-if __name__ == "__main__":
-    news()
+    return (mars_news_dict)
