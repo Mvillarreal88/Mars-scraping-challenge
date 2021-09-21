@@ -27,7 +27,7 @@ def scrape_info():
     img_soup = bs(img_html, "html.parser")
 
     # Find image url to the full size
-    featured_image = img_soup.find("img", class_ = "headerimage fade-in").text
+    featured_image = img_soup.find("img", class_ = "headerimage fade-in").text + "image/featured/mars2.jpg"
 
     # Display url of the full image
     featured_image_url = f"https://spaceimages-mars.com/{featured_image}"
