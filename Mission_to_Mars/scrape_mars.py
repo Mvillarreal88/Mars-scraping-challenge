@@ -27,10 +27,10 @@ def scrape_info():
     img_soup = bs(img_html, "html.parser")
 
     # Find image url to the full size
-    featured_image = img_soup.find("img", class_ = "headerimage fade-in").text + "image/featured/mars2.jpg"
+    featured_image = img_soup.find("img", class_ = "headerimage fade-in").text
 
     # Display url of the full image
-    featured_image_url = f"https://spaceimages-mars.com/{featured_image}"
+    featured_image_url = f"https://spaceimages-mars.com/{featured_image}"  + "image/featured/mars2.jpg"
 
     # Visit the galaxy Facts webpage and use Pandas to scrape the table
     url_facts = "https://galaxyfacts-mars.com/"
