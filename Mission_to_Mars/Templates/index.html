@@ -99,28 +99,10 @@
           
           <br>
   
-          <div class="row">
-              <div class="col-md-6" style= "border: solid; border-width: 1px; padding: 5px; width: 49%; float: left;">
-                <img src="{{mars.image_url}}" alt= "Cerberus Hemisphere Enhanced">
-                <h3 style= "text-align: center;">{{mars.pic_title}}</h3>
-              </div>
+              {% for hemi in mars.hem_img_urls %}
+              <div class = "card"><img src="{{hemi.image_url}}" alt="{{hemi.pic_title}}" />{{ title }}</div>
+              {% endfor %}
   
-              <div class="col-md-6" style= "border: solid; border-width: 1px; padding: 5px; width: 49%; float: right;">
-                <img src="{{mars.image_url}}" alt= "Schiaparelli Hemisphere Enhanced">
-                <h3 style= "text-align: center;">{{mars.pic_title}}</h3>  
-              </div>
-          </div>
-          <br>
-          <div class="row">
-              <div class="col-md-6" style= "border: solid; border-width: 1px; padding: 5px; width: 49%; float: left;">
-                <img src="{{mars.image_url}}" alt= "Syrtis Major Hemisphere Enhanced">
-                <h3 style= "text-align: center;">{{mars.pic_title}}</h3>
-              </div>
-  
-              <div class="col-md-6" style= "border: solid; border-width: 1px; padding: 5px; width: 49%; float: right;">
-                <img src="{{mars.image_url}}" alt= "Valles Marineris Hemisphere Enhanced">
-                <h3 style= "text-align: center;">{{mars.pic_title}}</h3>
-              </div>
           </div>
           <br>
         </div>
