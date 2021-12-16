@@ -1,6 +1,9 @@
 # Mars-scraping-challenge
 
 
+![Hemisphere pics](https://user-images.githubusercontent.com/81705144/146286109-e9d18015-43b9-491d-aa72-4c7f19f95f30.PNG)
+
+
 ## Initial Scraping
 
 In this activity I do an initial scrape using Jupyter notebook, BeautifulSoup, Pandas and requests on the Mars news website. This returns the following information needed for our scrape.
